@@ -21,3 +21,15 @@ def calc_triangle_perimeter(a, b, c):
    return perimeter
 
 print(f"\nO perímetro do triângulo é: {calc_triangle_perimeter(7,9,5)}")
+
+def check_rectangle(top_length, bottom_length, left_side, right_side, angle_01, angle_02, angle_03, angle_04):
+   if (
+         top_length == bottom_length and
+         right_side == left_side and
+         angle_01 == angle_02 == angle_03 == angle_04 == 90
+      ):
+      return " é um retângulo."
+   else:
+      return " não é um retângulo."
+
+print(f"\nSua forma{check_rectangle(15, 15, 5, 5, 90, 90, 90, 90)}")
