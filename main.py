@@ -28,8 +28,12 @@ def check_rectangle(top_length, bottom_length, left_side, right_side, angle_01, 
          right_side == left_side and
          angle_01 == angle_02 == angle_03 == angle_04 == 90
       ):
-      return " é um retângulo."
+      return True
    else:
-      return " não é um retângulo."
+      return False
 
-print(f"\nSua forma{check_rectangle(15, 15, 5, 5, 90, 90, 90, 90)}")
+if (check_rectangle(15, 15, 5, 5, 90, 90, 90, 90)):
+   print("É um retangulo")
+else:
+   print("Não é um retangulo")
+
